@@ -87,7 +87,7 @@ body {
 	box-sizing: border-box;
 	width: 100%;
 	padding: 20px;
-	padding-right: 80px;
+	padding-right: max(17%,40px);
 	font-weight: 600;
 	border-radius: 5px;
 	border: 1px solid hsl(246, 25%, 77%);
@@ -99,11 +99,8 @@ body {
 .signup-c__err-sign-c {
 	position: relative;
 }
-.signup-c__err-sign {
-	position: absolute;
-	right: 30px;
-	bottom: 16px;
-	content: url(images/icon-error.svg);
+.signup-c__intxt-slab.signup_err{
+	background:url(images/icon-error.svg) no-repeat 93.5% center;
 }
 .signup-c__err-msg {
 	position: absolute;
@@ -121,11 +118,14 @@ body {
 }
 /*note changing error html sturcture can distroy the function*/
 /*error state just add signup_err*/
+.signup-c__intxt-slab.signup_err>.signup__intxt{
+	background:url(images/icon-error.svg) no-repeat 93.5% center;
+}
 .signup_err .signup-c__err-sign-c > * {
 	display: block;
 }
 .signup_err .signup__intxt {
-	border: 2px solid hsl(0, 100%, 74%);
+	border: 1px solid hsl(0, 100%, 74%);
 }
 .signup_err .signup__intxt::placeholder {
 	color: hsl(0, 100%, 74%);
