@@ -1,0 +1,169 @@
+:root {
+	font-size: 16px;
+	box-sizing: border-box;
+}
+* {
+	margin: 0;
+}
+
+body {
+	font-family: "Kumbh Sans", sans-serif;
+	font-family: "Outfit", sans-serif;
+	font-family: "Poppins", sans-serif;
+	background-color: hsl(0, 100%, 74%);
+	background-image: url(images/bg-intro-desktop.png);
+}
+.page {
+	margin: 0 auto;
+	width: 80vw;
+	padding-top: 70px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.page > * {
+	flex-basis: 50%;
+}
+@media (max-width: 768px) {
+	.page > * {
+		flex-basis: 100%;
+	}
+}
+.footer {
+	flex-basis: 100%;
+}
+.intro {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.intro__frame {
+	text-align: center;
+	color: white;
+	max-width: 500px;
+}
+.intro__frame > * {
+	margin-bottom: 24px;
+}
+@media (min-width: 768px) {
+	.intro__frame {
+		text-align: left;
+		margin-right: 10%;
+	}
+}
+
+.intro__heading {
+	font-size: 2.5rem;
+	font-weight: 700;
+}
+.claim {
+	max-width: 540px;
+}
+.btn-trial-offer {
+	background-color: hsl(248, 32%, 49%);
+	border-radius: 10px;
+	padding: 10px;
+	box-shadow: 0px 10px 2px 0px hsla(249, 10%, 26%, 0.233);
+	color: white;
+	padding: 20px;
+	text-align: center;
+	margin: 24px 0;
+}
+.btn-trial-offer span {
+	font-weight: bold;
+}
+.signup-c {
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0px 10px 2px 0px hsla(249, 10%, 26%, 0.233);
+	padding: 10px calc(1.5vw + 10px);
+}
+.signup-c__intxt-slab {
+	position: relative;
+	margin: min(calc(2vw + 15px),30px) 0;
+}
+.signup__intxt {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 20px;
+	padding-right: 80px;
+	font-weight: 600;
+	border-radius: 5px;
+	border: 1px solid hsl(246, 25%, 77%);
+}
+.signup__intxt:focus {
+	outline: 1px #000 solid;
+}
+/*initialize err elements*/
+.signup-c__err-sign-c {
+	position: relative;
+}
+.signup-c__err-sign {
+	position: absolute;
+	right: 30px;
+	bottom: 16px;
+	content: url(images/icon-error.svg);
+}
+.signup-c__err-msg {
+	position: absolute;
+	text-align:right;
+	font-size: 12px;
+	height: 1rem; 
+	width: 100%;
+	top: 3px;
+	right: 0px;
+	color: hsl(0, 100%, 74%);
+}
+/*no err state*/
+.signup-c__err-sign-c > * {
+	display: none;
+}
+/*note changing error html sturcture can distroy the function*/
+/*error state just add signup_err*/
+.signup_err .signup-c__err-sign-c > * {
+	display: block;
+}
+.signup_err .signup__intxt {
+	border: 2px solid hsl(0, 100%, 74%);
+}
+.signup_err .signup__intxt::placeholder {
+	color: hsl(0, 100%, 74%);
+}
+
+.signup__btn-claim {
+	width: 100%;
+	background-color: hsl(154, 59%, 51%);
+	box-shadow: inset 0px -2px 2px 0px hsl(154deg 59% 41%);
+	border: 0;
+	padding: 20px;
+	cursor: pointer;
+	font-size: 1rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: white;
+	border-radius: 5px;
+}
+.signup__btn-claim:hover {
+	background-color: hsl(154, 59%, 51%, 75%);
+	box-shadow: inset 0px -4px 2px 0px hsl(154deg 59% 41%);
+}
+.claim-description {
+	margin: 15px;
+	text-align: center;
+	font-size: 11px;
+}
+.claim-description span {
+	color: hsl(0, 100%, 74%);
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.attribution {
+	font-size: 12px;
+	text-align: center;
+	margin: 20px;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}

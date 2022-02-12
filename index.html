@@ -1,42 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro component with sign up form</title>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;400;700&family=Outfit:wght@200&family=Poppins:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+		<title>Frontend Mentor | Intro component with sign up form</title>
 
-  Learn to code by watching others
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 
-  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-  but understanding how developers think is invaluable. 
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="page">
+			<section class="intro">
+				<div class="intro__frame">
+					<div class="intro__heading">Learn to code by watching others</div>
+					<div class="intro_text">
+						See how experienced developers solve problems in real-time. Watching
+						scripted tutorials is great, but understanding how developers think is
+						invaluable.
+					</div>
+				</div>
+			</section>
+			<section class="claim">
+				<div class="btn-trial-offer">
+					<span>Try it free 7 days</span> then $20/mo. thereafter 
+				</div>
 
-  Try it free 7 days then $20/mo. thereafter
+				<form class="signup-c" action="">
+					<div class="signup-c__intxt-slab" id="fnameSlab">
+						<input
+							type="text"
+							class="signup__intxt"
+							name="First Name"
+							id="fname"
+							placeholder="First Name"
+							aria-label="First Name"
+						/>
+						<div class="signup-c__err-sign-c">
+							<div class="signup-c__err-sign">div.signup-c__err-sign</div>
+							<div class="signup-c__err-msg">sadfsdfsdf</div>
+						</div>
+					</div>
+					<div class="signup-c__intxt-slab" id="lnameSlab">
+						<input
+							type="text"
+							class="signup__intxt"
+							name="Last Name"
+							id="lname"
+							placeholder="Last Name"
+							aria-label="Last Name"
+						/>
+						<div class="signup-c__err-sign-c">
+							<div class="signup-c__err-sign">div.signup-c__err-sign</div>
+							<div class="signup-c__err-msg">sfsdf</div>
+						</div>
+					</div>
+					<div class="signup-c__intxt-slab" id="emailSlab">
+						<input
+							type="text"
+							class="signup__intxt"
+							name="email"
+							id="Email Address"
+							placeholder="Email Address"
+							aria-label="Email Address"
+						/>
+						<div class="signup-c__err-sign-c">
+							<div class="signup-c__err-sign">div.signup-c__err-sign</div>
+							<div class="signup-c__err-msg">asfasdf</div>
+						</div>
+					</div>
+					<div class="signup-c__intxt-slab" id="pssSlab">
+						<input
+							type="password"
+							class="signup__intxt"
+							name="Password"
+							id="password"
+							placeholder="Password"
+							aria-label="Password"
+						/>
+						<div class="signup-c__err-sign-c">
+							<div class="signup-c__err-sign">div.signup-c__err-sign</div>
+							<div class="signup-c__err-msg">asfasdf</div>
+						</div>
+					</div>
+					
+					
+						
+						<button class="signup__btn-claim" type="button" id="claim">
+							Claim your free trial
+						</button>
+					
+					<div class="claim-description">
+						<div class="claim-description">
+							By clicking the button, you are
+											   agreeing to our <span>Terms and Services</span>
+						</div>
+					</div>
+				</form>
+				<div>
+				</div>
+			</section>
 
-  First Name 
-  Last Name 
-  Email Address
-  Password
-
-  Claim your free trial 
-
-  By clicking the button, you are agreeing to our Terms and Services
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+			<footer class="footer">
+				<p class="attribution">
+					Challenge by
+					<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+						>Frontend Mentor</a
+					>. Coded by <a target="_blank" href="https://www.frontendmentor.io/profile/momenkamal221" >Mo'men Kamal</a>.
+				</p>
+			</footer>
+		</div>
+		<script src="claim.js"></script>
+	</body>
 </html>
